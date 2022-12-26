@@ -1,0 +1,125 @@
+@import 'reset.css';
+
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    margin-top: 100px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2.5rem;
+    overflow: hidden;
+    width: 450px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    background-color:  hsl(225, 100%, 98%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.title h1 {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.infos p{
+    text-align: center;
+    font-size: 20px;
+    font-weight:100;
+    color: hsl(224, 23%, 55%);
+}
+
+.payment {
+    display: flex;
+    align-items: center;
+    width: 375px;
+    gap:6rem;
+    background-color: hsl(225, 100%, 94%);
+    border-radius: 12px;
+    height: 95px;
+}
+.plan {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap:1rem;
+}
+.annual {
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+    
+
+}
+
+
+.music {
+    display: flex;
+    align-items: center;
+    font-weight: 1000;
+    gap:1.5rem;
+}
+
+.proceed {
+    background-color: hsl(245, 75%, 52%);
+    color:hsl(225, 100%, 98%);
+    width: 320px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+
+}
+
+.cancel {
+    color:hsl(224, 23%, 55%);
+    font-weight: 600;
+}
+
+.proceed:hover {
+    cursor: pointer;
+    animation-name:animation;
+    animation-duration: 0.5s;
+    background-color: hsl(225, 100%, 98%);
+    color: hsl(245, 75%, 52%);
+}
+
+.cancel:hover {
+    cursor: pointer;
+}
+
+
+.price {
+    color:hsl(224, 23%, 55%);
+}
+
+
+@keyframes animation {
+    from {
+        background-color: hsl(245, 75%, 52%);
+        color: hsl(225, 100%, 98%);
+    }
+    to {
+        background-color: hsl(225, 100%, 98%);
+        color: hsl(245, 75%, 52%);
+    }
+}
+
+
+@media (max-width:700px) {
+    body {
+        background-image: url('images/pattern-background-mobile.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
